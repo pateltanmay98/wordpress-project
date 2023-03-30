@@ -87,3 +87,7 @@ Thumbs.db
 !wp-content/plugins/example-plugin/
 !wp-content/themes/my-custom-theme/
 wp-content/themes/my-custom-theme/screenshot.png
+wp-content/themes/my-custom-theme/images
+wp-content/themes/my-custom-theme/build
+wp-content/themes/my-custom-theme/css
+wp-content/themes/my-custom-theme/src
