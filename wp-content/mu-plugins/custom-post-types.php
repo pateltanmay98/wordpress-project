@@ -24,10 +24,9 @@ function custom_post_types()
   // Program Post Type
   register_post_type('program', array(
     'supports' => array('title', 'editor', 'excerpt'),
-    'rewrite' => array('slug' => 'programs', 'with_front' => true),
+    'rewrite' => array('slug' => 'programs'),
     'has_archive' => true,
     'public' => true,
-    'show_in_rest' => true,
     'labels' => array(
       'name' => 'Programs',
       'add_new_item' => 'Add New Program',
@@ -37,6 +36,21 @@ function custom_post_types()
       'add_new' => 'Add Program'
     ),
     'menu_icon' => 'dashicons-awards'
+  ));
+
+  // Professor Post Type
+  register_post_type('professor', array(
+    'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
+    'public' => true,
+    'labels' => array(
+      'name' => 'Professors',
+      'add_new_item' => 'Add New Professor',
+      'edit_item' => 'Edit Professor',
+      'all_items' => 'All Professors',
+      'singular_name' => 'Professor',
+      'add_new' => 'Add Professor'
+    ),
+    'menu_icon' => 'dashicons-welcome-learn-more'
   ));
 }
 
